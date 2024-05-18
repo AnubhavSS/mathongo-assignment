@@ -2,32 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.notesContain{
+  width: 90vw;
+  border-radius: 16px;
+  border: 1px solid #EAECF0;
+  padding: 24px;
+  margin-top: 26px;
+ 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.addNote{
+  width: 152px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #D0D5DD;
+  box-shadow: 0 0 2 0 #101828;
+  /* margin-left: 300px; */
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.noteDate{
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+color:#344054 ;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.noteTime{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.MinSec{
+  font-weight: 500;
+  color: #6941C6;
+}
+
+.noteText{
+  width: 85vw;
+  border-radius: 8px;
+  padding: 12px;
+  border:1px solid #EAECF0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #344054;
+}
+
+.noteBtn{
+  /* width: 98px; */
+  height: 28px;
+  border-radius: 8px;
+  border:1px solid  #D0D5DD;
+  padding: 4px 10px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color:#344054 ;
+  text-align: center;
+  margin-top: 10px;
+
 }
